@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	font-family: 'Lato';
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #dc6e6e;
+	color: #000000;
+}
+
+header {
+	width: 100%;
+	margin: 0px;
+	position: sticky;
+	top: 0%;
+	background-color: #000000;
+	color: #ffffff;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+header .action,
+footer .action {
+	float: left;
+	cursor: pointer;
+	margin: 20px;
+	align-self: center;
+	flex-grow: 1;
+	display: flex;
+	text-align: center;
+}
+
+header .action:hover,
+footer .action:hover {
+	color: #e6e6e6;
+}
+
+header .action p,
+footer .action p {
+	width: 100%;
+}
+
+header .searchbar {
+	float: left;
+	align-self: center;
+	flex-grow: 8;
+	display: flex;
+}
+
+header .searchbar input[type="text"] {
+	flex-grow: 8;
+}
+
+header .searchbar input[type="submit"] {
+	flex-grow: 1;
+}
+
+.container {
+	flex: 1 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+sidebar {
+	width: 25%;
+	background-color: #d24545;
+	margin: 20px;
+}
+
+.main {
+	width: calc(100% - 25% - 6 * 20px);
+	flex: 1 0 auto;
+	background-color: #b82c2c;
+	float: left;
+	position: relative;
+	margin: 20px;
+}
+
+.main .entry {
+	width: 100%;
+	float: left;
+}
+
+.main .entry .image {
+	float: left;
+	max-width: 20%;
+}
+
+.main .entry .image img {
+	max-width: 100%;
+}
+
+.main .entry .text {
+	float: left;
+	width: 80%;
+}
+
+footer {
+	width: 100%;
+	bottom: 0%;
+	margin: 0px;
+	background-color: #000000;
+	color: #ffffff;
+	flex: 0 0 auto;
+	text-align: center;
+	display: flex;
+	align-self: center;
+}
